@@ -8,7 +8,7 @@ CSS Framework : Bulma
 Host : Netlify
 
 ## Reference
-https://sumetph.tech
+http://sumetph.tech
 
 ## Example
 <img src="https://i.imgur.com/9zKzZEC.png" />
