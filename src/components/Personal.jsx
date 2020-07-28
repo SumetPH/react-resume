@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 // asset
 import Profile from "../asset/img/profile.jpg";
@@ -12,7 +13,11 @@ function Personal() {
             <div className="level">
               <div className="level-item">
                 <figure className="image is-128x128">
-                  <img className="is-rounded" src={Profile} alt="profile" />
+                  <LazyLoadImage
+                    className="is-rounded"
+                    effect="blur"
+                    src={Profile}
+                  />
                 </figure>
               </div>
             </div>

@@ -5,6 +5,7 @@ import App from "./App";
 // asset
 import "./asset/css/bulma.css";
 import "./asset/css/animate.css";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 ReactDOM.render(
   <React.StrictMode>

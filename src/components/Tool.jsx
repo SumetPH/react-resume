@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 // asset
 const data = [
@@ -46,10 +47,10 @@ function Tool() {
             onMouseEnter={() => setHover(item.name)}
             onMouseLeave={() => setHover(null)}
           >
-            <img
+            <LazyLoadImage
               className={hover === item.name ? "animated pulse infinite" : ""}
               src={item.src}
-              alt="img"
+              effect="blur"
             />
           </a>
         </div>
