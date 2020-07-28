@@ -17,6 +17,7 @@ function Personal() {
                     className="is-rounded"
                     effect="blur"
                     src={Profile}
+                    height={100}
                   />
                 </figure>
               </div>

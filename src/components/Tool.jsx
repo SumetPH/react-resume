@@ -51,6 +51,7 @@ function Tool() {
               className={hover === item.name ? "animated pulse infinite" : ""}
               src={item.src}
               effect="blur"
+              height={200}
             />
           </a>
         </div>

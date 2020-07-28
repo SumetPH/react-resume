@@ -54,7 +54,7 @@ function Website() {
             <div className="card-image">
               <figure className="image is-bordered">
                 <a href={web.link} target="_black">
-                  <LazyLoadImage src={web.src} effect="blur" />
+                  <LazyLoadImage src={web.src} effect="blur" height={200} />
                 </a>
               </figure>
             </div>
