@@ -8,7 +8,7 @@ function Job() {
       </header>
       <div className="card-content" style={{ paddingLeft: 60 }}>
         <div className="content">
-          <h5>Front-end</h5>
+          <b>Front-end</b>
           <ul>
             <li>HTML</li>
             <li>CSS</li>
@@ -16,14 +16,14 @@ function Job() {
           </ul>
         </div>
         <div className="content">
-          <h5>Back-end</h5>
+          <b>Back-end</b>
           <ul>
             <li>Node.js</li>
             <li>PHP</li>
           </ul>
         </div>
         <div className="content">
-          <h5>Framework & Library</h5>
+          <b>Framework & Library</b>
           <ul>
             <li>React.js</li>
             <li>Vue.js</li>

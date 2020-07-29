@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const data = [
@@ -46,22 +46,32 @@ const data = [
 ];
 
 function Website() {
+  const [hover, setHover] = useState({ title: null, onHover: false });
+
   return (
     <div className="columns is-multiline">
       {data.map((web, index) => (
         <div key={index} className="column is-6-tablet is-3-desktop">
-          <div className="card">
+          <div
+            className={
+              hover.title === web.title && hover.onHover === true
+                ? "card animated pulse"
+                : "card"
+            }
+            onMouseEnter={() => setHover({ title: web.title, onHover: true })}
+            onMouseLeave={() => setHover({ title: null, onHover: false })}
+          >
             <div className="card-image">
               <figure className="image is-bordered">
                 <a href={web.link} target="_black">
-                  <LazyLoadImage src={web.src} effect="blur" height={200} />
+                  <LazyLoadImage src={web.src} effect="blur" alt="website" />
                 </a>
               </figure>
             </div>
             <div className="card-content">
               <div className="content">
                 <a href={web.link} target="_black">
-                  <h4>{web.title}</h4>
+                  <b>{web.title}</b>
                 </a>
                 <hr />
                 <small>

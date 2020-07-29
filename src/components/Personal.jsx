@@ -2,7 +2,7 @@ import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 // asset
-import Profile from "../asset/img/profile.jpg";
+import Profile from "../asset/img/profile.png";
 
 function Personal() {
   return (
@@ -17,7 +17,7 @@ function Personal() {
                     className="is-rounded"
                     effect="blur"
                     src={Profile}
-                    height={100}
+                    alt="profile"
                   />
                 </figure>
               </div>
@@ -25,7 +25,7 @@ function Personal() {
           </div>
           <div className="column">
             <div className="content">
-              <h3>ประวัติส่วนตัว</h3>
+              <b style={{ fontSize: 24 }}>ประวัติส่วนตัว</b>
               <p>
                 ชื่อ-นามสกุล : สุเมธ ผงพิลา
                 <br />
