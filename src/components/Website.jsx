@@ -3,9 +3,9 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const data = [
   {
-    title: "Resume SumetPH",
+    title: "SumetPH Resume",
     src: require("../asset/web/resume.png"),
-    link: "https://sumetph.github.io",
+    link: "https://sumetph.tech",
     fontEnd: "React.js",
     backEnd: "-",
     database: "-",
