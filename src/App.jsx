@@ -14,8 +14,8 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div>
-      <div className="section">
-        <div className="container">
+      <div className="section" style={style.section}>
+        <div className="container" style={style.container}>
           <div className="columns">
             <div className="column has-text-centered">
               <Header />
@@ -60,5 +60,17 @@ function App() {
     </div>
   );
 }
+
+const style = {
+  section: {
+    backgroundColor: "#eaeaea",
+  },
+  container: {
+    border: "1px solid white",
+    borderRadius: "30px",
+    padding: "50px 50px 150px 50px",
+    backgroundColor: "white",
+  },
+};
 
 export default App;
