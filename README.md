@@ -1,4 +1,5 @@
 # React Resume
+My resume creat by React.js
 
 ## Technology
 Front-End : React.js  
@@ -8,7 +9,7 @@ CSS Framework : Bulma
 Host : Netlify
 
 ## Reference
-http://sumetph.tech
+https://sumetph.tech
 
 ## Example
 <img src="https://i.imgur.com/9zKzZEC.png" />
