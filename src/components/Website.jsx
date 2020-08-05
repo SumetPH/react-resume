@@ -51,7 +51,7 @@ function Website() {
   return (
     <div
       className="columns is-multiline"
-      style={{ margin: "0px 50px 60px 50px" }}
+      style={{ margin: "0px 30px 50px 30px" }}
     >
       {data.map((web, index) => (
         <div key={index} className="column is-6-tablet is-3-desktop">
