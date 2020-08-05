@@ -37,10 +37,10 @@ function App() {
             </div>
             <div className="column is-5">
               <div className="column">
-                <Education />
+                <Qualification />
               </div>
               <div className="column">
-                <Qualification />
+                <Education />
               </div>
             </div>
           </div>
@@ -68,7 +68,6 @@ const style = {
   container: {
     border: "1px solid white",
     borderRadius: "30px",
-    padding: "50px 50px 150px 50px",
     backgroundColor: "white",
   },
 };

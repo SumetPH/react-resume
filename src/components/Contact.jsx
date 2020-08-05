@@ -25,7 +25,7 @@ function Contact() {
           </div>
           <div className="media">
             <div className="media-content">
-              <p>Website : sumetph.tech</p>
+              <p>Portfolio : sumetph.tech</p>
             </div>
           </div>
         </div>

@@ -49,7 +49,10 @@ function Website() {
   const [hover, setHover] = useState({ title: null, onHover: false });
 
   return (
-    <div className="columns is-multiline">
+    <div
+      className="columns is-multiline"
+      style={{ margin: "0px 50px 60px 50px" }}
+    >
       {data.map((web, index) => (
         <div key={index} className="column is-6-tablet is-3-desktop">
           <div
