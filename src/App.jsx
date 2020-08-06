@@ -8,7 +8,7 @@ import Job from "./components/Job";
 import Education from "./components/Education";
 import Qualification from "./components/Qualification";
 import Tool from "./components/Tool";
-import Website from "./components/Website";
+// import Website from "./components/Website";
 import Footer from "./components/Footer";
 
 function App() {
@@ -49,11 +49,11 @@ function App() {
               <Tool />
             </div>
           </div>
-          <div className="columns">
+          {/* <div className="columns">
             <div className="column">
               <Website />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <Footer />

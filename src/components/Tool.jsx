@@ -34,7 +34,10 @@ function Tool() {
   const [hover, setHover] = useState(null);
 
   return (
-    <div className="columns is-mobile is-tablet is-desktop is-multiline is-centered">
+    <div
+      className="columns is-mobile is-tablet is-desktop is-multiline is-centered"
+      style={{ marginBottom: 60 }}
+    >
       {data.map((item, index) => (
         <div
           key={index}
