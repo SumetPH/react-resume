@@ -7,7 +7,7 @@ import Profile from "../asset/img/profile.png";
 function Personal() {
   return (
     <div className="card">
-      <div className="card-content">
+      <div className="card-content" style={{ padding: 40 }}>
         <div className="columns">
           <div className="column is-5">
             <div className="level">
