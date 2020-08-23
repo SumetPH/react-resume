@@ -9,22 +9,22 @@ function Job() {
       <div className="card-content" style={{ paddingLeft: 60 }}>
         <div className="content">
           <b>Front-end</b>
-          <ul>
+          <ul style={{ marginTop: 0 }}>
             <li>HTML</li>
             <li>CSS</li>
-            <li>JavaScrip</li>
+            <li>JavaScript</li>
           </ul>
         </div>
         <div className="content">
           <b>Back-end</b>
-          <ul>
+          <ul style={{ marginTop: 0 }}>
             <li>Node.js</li>
             <li>PHP</li>
           </ul>
         </div>
         <div className="content">
           <b>Framework & Library</b>
-          <ul>
+          <ul style={{ marginTop: 0 }}>
             <li>React.js</li>
             <li>Vue.js</li>
             <li>Express.js</li>

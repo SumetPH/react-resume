@@ -8,24 +8,42 @@ function Contact() {
       </header>
       <div className="card-content">
         <div className="content">
-          <div className="media">
+          <div className="media" style={{ marginBottom: 0 }}>
             <div className="media-content">
               <p>Phone : 0930657199</p>
             </div>
           </div>
-          <div className="media">
+          <div className="media" style={{ marginBottom: 0 }}>
             <div className="media-content">
               <p>Email : notsumet1@gmail.com</p>
             </div>
           </div>
-          <div className="media">
+          <div className="media" style={{ marginBottom: 0 }}>
             <div className="media-content">
-              <p>Github : github.com/sumetph</p>
+              <p>
+                Github :{" "}
+                <a
+                  href="https://github.com/sumetph"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  github.com/sumetph
+                </a>
+              </p>
             </div>
           </div>
-          <div className="media">
+          <div className="media" style={{ marginBottom: 0 }}>
             <div className="media-content">
-              <p>Portfolio : sumetph.tech</p>
+              <p>
+                Portfolio :{" "}
+                <a
+                  href="https://sumetph.tech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  sumetph.tech
+                </a>
+              </p>
             </div>
           </div>
         </div>

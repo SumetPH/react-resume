@@ -32,7 +32,7 @@ function App() {
                 <Contact />
               </div>
               <div className="column">
-                <Job />
+                <Education />
               </div>
             </div>
             <div className="column is-5">
@@ -40,7 +40,7 @@ function App() {
                 <Qualification />
               </div>
               <div className="column">
-                <Education />
+                <Job />
               </div>
             </div>
           </div>
