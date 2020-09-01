@@ -6,10 +6,10 @@ Front-End : React.js
 Back-End : -  
 Database : -  
 CSS Framework : Bulma  
-Host : Netlify
+Host : Github
 
 ## Reference
-https://sumetph.tech
+https://sumetph.github.io
 
 ## Example
 <img src="https://i.imgur.com/9zKzZEC.png" />
