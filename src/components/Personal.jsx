@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../App";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 // asset
 import Profile from "../asset/img/profile.png";
 
 function Personal() {
+  const { lang } = useContext(AppContext);
+
   return (
     <div className="card">
       <div className="card-content" style={{ padding: 40 }}>
@@ -25,14 +28,29 @@ function Personal() {
           </div>
           <div className="column">
             <div className="content">
-              <b style={{ fontSize: 24 }}>ประวัติส่วนตัว</b>
-              <p>
-                ชื่อ-นามสกุล : สุเมธ ผงพิลา
-                <br />
-                เกิด : 11 กุมภาพันธ์ 2540
-                <br />
-                สัญชาติ : ไทย
-              </p>
+              {lang === "eng" ? (
+                <div>
+                  <b style={{ fontSize: 24 }}>Personal</b>
+                  <p>
+                    Name : Sumet Phongphila
+                    <br />
+                    Birthday: 11 February 1997
+                    <br />
+                    Nationality : Thai
+                  </p>
+                </div>
+              ) : (
+                <div>
+                  <b style={{ fontSize: 24 }}>ประวัติส่วนตัว</b>
+                  <p>
+                    ชื่อ-นามสกุล : สุเมธ ผงพิลา
+                    <br />
+                    เกิด : 11 กุมภาพันธ์ 2540
+                    <br />
+                    สัญชาติ : ไทย
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>

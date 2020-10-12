@@ -1,4 +1,5 @@
-import React from "react";
+import React, { createContext, useEffect, useState } from "react";
+import Swal from "sweetalert2";
 
 // components
 import Header from "./components/Header";
@@ -11,9 +12,29 @@ import Tool from "./components/Tool";
 // import Website from "./components/Website";
 import Footer from "./components/Footer";
 
+export const AppContext = createContext();
+
 function App() {
+  const [lang, setLang] = useState("eng");
+  useEffect(() => {
+    Swal.fire({
+      title: "Select language",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Eng",
+      cancelButtonText: "Thai",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        setLang("eng");
+      } else {
+        setLang("thai");
+      }
+    });
+  }, []);
   return (
-    <div>
+    <AppContext.Provider value={{ lang: lang }}>
       <div className="section" style={style.section}>
         <div className="container" style={style.container}>
           <div className="columns">
@@ -57,7 +78,7 @@ function App() {
         </div>
       </div>
       <Footer />
-    </div>
+    </AppContext.Provider>
   );
 }
 

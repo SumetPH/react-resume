@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../App";
 
 function Contact() {
+  const { lang } = useContext(AppContext);
   return (
     <div className="card">
       <header className="card-header has-background-black">
-        <p className="card-header-title has-text-white">ติดต่อ</p>
+        <p className="card-header-title has-text-white">
+          {lang === "eng" ? <span>Contact</span> : <span>ติดต่อ</span>}
+        </p>
       </header>
       <div className="card-content">
         <div className="content">

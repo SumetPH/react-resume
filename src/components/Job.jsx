@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../App";
 
 function Job() {
+  const { lang } = useContext(AppContext);
   return (
     <div className="card">
       <header className="card-header has-background-black">
-        <p className="card-header-title has-text-white">งานที่สนใจ</p>
+        <p className="card-header-title has-text-white">
+          {lang === "eng" ? <span>Job Target</span> : <span>งานที่สนใจ</span>}
+        </p>
       </header>
       <div className="card-content" style={{ paddingLeft: 60 }}>
         <div className="content">
