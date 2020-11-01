@@ -14,11 +14,6 @@ function Contact() {
         <div className="content">
           <div className="media" style={{ marginBottom: 0 }}>
             <div className="media-content">
-              <p>Phone : 0930657199</p>
-            </div>
-          </div>
-          <div className="media" style={{ marginBottom: 0 }}>
-            <div className="media-content">
               <p>Email : notsumet1@gmail.com</p>
             </div>
           </div>
