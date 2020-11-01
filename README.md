@@ -1,5 +1,5 @@
 # React Resume
-My resume creat by React.js
+My resume create by React.js
 
 ## Technology
 Front-End : React.js  
