@@ -11,6 +11,8 @@ import Qualification from "./components/Qualification";
 import Tool from "./components/Tool";
 // import Website from "./components/Website";
 import Footer from "./components/Footer";
+import Certificate from "./components/Certificate";
+import Award from "./components/Award";
 
 export const AppContext = createContext();
 
@@ -50,13 +52,19 @@ function App() {
           <div className="columns is-centered">
             <div className="column is-5">
               <div className="column">
-                <Contact />
+                <Education />
               </div>
               <div className="column">
-                <Education />
+                <Award />
+              </div>
+              <div className="column">
+                <Certificate />
               </div>
             </div>
             <div className="column is-5">
+              <div className="column">
+                <Contact />
+              </div>
               <div className="column">
                 <Qualification />
               </div>
